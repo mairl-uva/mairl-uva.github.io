@@ -1,13 +1,12 @@
 <p align="center">
 
-  <h2 align="center">LiveNet: Robust, Minimally Invasive Multi-Robot Control for Safe and Live Navigation in Constrained Environments</h2>
+  <h2 align="center">Multi-Agent Inverse Reinforcement Learning in Real World Unstructured Pedestrian Crowds</h2>
   <p align="center">
-    <a href="https://srikarg89.github.io/"><strong>Srikar Gouru</strong></a>
-    ·
-    <a href="https://github.com/sidlakkoju"><strong>Siddharth Lakkoju</strong>
-    ·
-    <a href="https://engineering.virginia.edu/faculty/rohan-chandra"><strong>Rohan Chandra</strong>
-    ·    
+    <a href="https://engineering.virginia.edu/faculty/rohan-chandra"><strong>Rohan Chandra</strong>·
+    <a href="https://engineering.virginia.edu/faculty/rohan-chandra"><strong>Haresh Karnan</strong>·
+    <a href="https://engineering.virginia.edu/faculty/rohan-chandra"><strong>Negar Mehr</strong>·
+    <a href="https://engineering.virginia.edu/faculty/rohan-chandra"><strong>Peter Stone</strong>·
+    <a href="https://engineering.virginia.edu/faculty/rohan-chandra"><strong>Joydeep Biswas</strong>·    
 </p>
 
 <p align="center">
