@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="LiveNet: Robust, Minimally Invasive Multi-Robot Control for Safe and Live Navigation in Constrained Environments">
+        content="Multi-Agent Inverse Reinforcement Learning in Real World Unstructured Pedestrian Crowds">
   <meta name="keywords" content="LiveNet, BarrierNet, CBFs">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>LiveNet</title>
+  <title>MAIRL</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -24,8 +24,10 @@
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
+        <link rel="stylesheet" href="./static/css/videos.css">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/videos.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
@@ -42,7 +44,6 @@
 </head>
 <body>
 
-
 <!-- Hero / Title section -->
 
 <section class="hero">
@@ -50,19 +51,27 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">LiveNet: Robust, Minimally Invasive Multi-Robot Control for Safe and Live Navigation in Constrained Environments</h1>
+          <h1 class="title is-2 publication-title">Multi-Agent Inverse Reinforcement Learning in Real World Unstructured Pedestrian Crowds</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://srikarg89.github.io/">Srikar Gouru</a>,</span>
-            <span class="author-block">
-              <a href="https://github.com/sidlakkoju">Siddharth Lakkoju</a>,</span>
-            <span class="author-block">
               <a href="https://engineering.virginia.edu/faculty/rohan-chandra">Rohan Chandra</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://hareshkarnan.github.io/">Haresh Karnan</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://negarmehr.com/">Negar Mehr</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.cs.utexas.edu/~pstone/">Peter Stone</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.joydeepb.com/">Joydeep Biswas</a>,
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block">University of Virginia</span>
+            <span class="author-block">UVA, UC Berkeley, UT Austin</span>
           </div>
 
           <!-- Links -->
@@ -71,8 +80,8 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2412.04659"
-                   class="external-link button is-normal is-rounded is-dark">
+                <a href="https://arxiv.org/pdf/2405.16439"
+                   class="external-link button is-normal is-rounded is-dark" target="_blank">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                   </span>
@@ -80,8 +89,8 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2412.04659"
-                   class="external-link button is-normal is-rounded is-dark">
+                <a href="https://arxiv.org/pdf/2405.16439"
+                   class="external-link button is-normal is-rounded is-dark" target="_blank">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
                   </span>
@@ -90,12 +99,12 @@
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/srikarg89/LiveNet"
-                   class="external-link button is-normal is-rounded is-dark">
+                <a href="https://github.com/ut-amrl/bluecity_example/tree/MA-IRL"
+                   class="external-link button is-normal is-rounded is-dark" target="_blank">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code</span>
+                  <span>Data</span>
                   </a>
               </span>
             </div>
@@ -106,250 +115,114 @@
   </div>
 </section>
 
-<section class="section">
-  <div class="container is-max-desktop">
+<section class="hero">
+  <!-- <div class="container is-max-desktop">
+
+    <div class="video-grid">
+      <div class="video-container">
+          <video src="static/LiveNet_Doorway.mp4" controls autoplay loop muted></video>
+          <p class="video-title">LiveNet Doorway</p>
+      </div>
+      <div class="video-container">
+          <video src="static/LiveNet_Intersection.mp4" controls autoplay loop muted></video>
+          <p class="video-title">LiveNet Intersection</p>
+      </div>
+      <div class="video-container">
+          <video src="static/BarrierNet_Doorway.mp4" controls autoplay loop muted></video>
+          <p class="video-title">BarrierNet Doorway</p>
+      </div>
+      <div class="video-container">
+          <video src="static/BarrierNet_Intersection.mp4" controls autoplay loop muted></video>
+          <p class="video-title">BarrierNet Intersection</p>
+      </div>
+      <div class="video-container">
+          <video src="static/MACBF_DOORWAY.mp4" controls autoplay loop muted></video>
+          <p class="video-title">MACBF Doorway</p>
+      </div>
+      <div class="video-container">
+          <video src="static/MACBF_INTERSECTION.mp4" controls autoplay loop muted></video>
+          <p class="video-title">MACBF Intersection</p>
+      </div>
+      <div class="video-container">
+          <video src="static/MPC_CBF_Doorway.mp4" controls autoplay loop muted></video>
+          <p class="video-title">MPC Doorway</p>
+      </div>
+      <div class="video-container">
+          <video src="static/MPC_CBF_Intersection.mp4" controls autoplay loop muted></video>
+          <p class="video-title">MPC Intersection</p>
+      </div>
+      <div class="video-container">
+          <video src="static/PIC_DOORWAY.mp4" controls autoplay loop muted></video>
+          <p class="video-title">MARL Doorway</p>
+      </div>
+      <div class="video-container">
+          <video src="static/PIC_INTERSECTION.mp4" controls autoplay loop muted></video>
+          <p class="video-title">MARL Intersection</p>
+      </div>
+      <div class="video-container">
+          <video src="static/SMG_CBF_Doorway.mp4" controls autoplay loop muted></video>
+          <p class="video-title">SMG Doorway</p>
+      </div>
+      <div class="video-container">
+          <video src="static/SMG_CBF_Intersection.mp4" controls autoplay loop muted></video>
+          <p class="video-title">SMG Intersection</p>
+      </div>
+  </div>
+
+  <script>
+    // Set the playback rate for all videos
+    document.querySelectorAll('video').forEach(video => {
+        video.playbackRate = 3.0; // Adjust this value for desired speed (1.0 is normal speed)
+    });
+  </script>
+
+  <br><br> -->
+  
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Robots in densely populated real-world environments frequently encounter constrained and cluttered situations such as passing through narrow doorways, hallways, and corridor intersections, where conflicts over limited space result in collisions or deadlocks among the robots. Current decentralized state-of-the-art optimization- and neural network-based approaches (i) are predominantly designed for general open spaces, and (ii) are overly conservative, either guaranteeing safety, or liveness, but not both. While some solutions rely on centralized conflict resolution, their highly invasive trajectories make them impractical for real-world deployment. This paper introduces LiveNet, a fully decentralized and robust neural network controller that enables human-like yielding and passing, resulting in agile, non-conservative, deadlock-free, and safe, navigation in congested, conflict-prone spaces. LiveNet is minimally invasive, without requiring inter-agent communication or cooperative behavior. The key insight behind LiveNet is a unified CBF formulation for simultaneous safety and liveness, which we integrate within a neural network for robustness. We evaluated LiveNet in simulation and found that general multi-robot optimization- and learning-based navigation methods fail to even reach the goal, and while methods designed specially for such environments do succeed, they are 10-20 times slower, 4-5 times more invasive, and much less robust to variations in the scenario configuration such as changes in the start states and goal states, among others. We open-source the LiveNet code <a href="https://github.com/srikarg89/LiveNet">here</a>.
+            Social robot navigation in crowded public spaces such as university campuses, restaurants, grocery stores, and hospitals, is an increasingly important area of research. One of the core strategies for achieving this goal is to understand humans' intent--underlying psychological factors that govern their motion--by learning how humans assign rewards to their actions, typically via inverse reinforcement learning (IRL). Despite significant progress in IRL, learning reward functions of multiple agents simultaneously in dense unstructured pedestrian crowds has remained intractable due to the nature of the tightly coupled social interactions that occur in these scenarios e.g. passing, intersections, swerving, weaving, etc. In this paper, we present a new multi-agent maximum entropy inverse reinforcement learning algorithm for real world unstructured pedestrian crowds. Key to our approach is a simple, but effective, mathematical trick which we name the so-called "tractability-rationality trade-off" trick that achieves tractability at the cost of a slight reduction in accuracy. We compare our approach to the classical single-agent MaxEnt IRL as well as state-of-the-art trajectory prediction methods on several datasets including the ETH, UCY, SCAND, JRDB, and a new dataset, called Speedway, collected at a busy intersection on a University campus focusing on dense, complex agent interactions. Our key findings show that, on the dense Speedway dataset, our approach ranks 1^st among top 7 baselines with > 2X improvement over single-agent IRL, and is competitive with state-of-the-art large transformer-based encoder-decoder models on sparser datasets such as ETH/UCY (ranks 3^rd among top 7 baselines).
           </p>
         </div>
       </div>
     </div>
     <!--/ Abstract. -->
 
-     <!-- GIFs Section -->
-<!--     <div class="columns is-centered has-text-centered">
-      <div class="column">
-        <figure class="image">
-          <img src="./static/images/ours_trajectory_256_agents_MAZE.gif" alt="256 agents" style="width: 1500px; height: auto;">
-          <figcaption>256 Agents</figcaption>
-        </figure>
-      </div>
-      <div class="column">
-        <figure class="image">
-          <img src="./static/images/ours_trajectory_1024_agents_MAZE.gif" alt="1024 agentsF" style="width: 1500px; height: auto;">
-          <figcaption>1024 Agents</figcaption>
-        </figure>
-      </div>
-    </div>
-    <!--/ GIFs Section -->
-<!--   </div> -->
-<!-- </section>  -->
-
-
-<!-- GIFs Section -->
- <!-- <div class="columns is-centered has-text-centered">
-  <div class="column">
-    <figure class="image">
-      <img src="./static/images/ours_trajectory_16_agents_empty_itr_06_fps_10_trailing_random.gif" alt="16 empty agents">
-      <figcaption>Empty Environment</figcaption>
-    </figure>
-  </div>
-  <div class="column">
-    <figure class="image">
-      <img src="./static/images/maze_2.gif" alt="maze 16 agents">
-      <figcaption>Maze Environment</figcaption>
-    </figure>
-  </div>
-</div>  -->
-
-<!-- <div class="columns is-centered has-text-centered">
-  <div class="column">
-    <figure class="image">
-      <img src="./static/images/ours_trajectory_1024_agents_MAZE.gif" alt="maze_1024">
-      <figcaption>1024 Agents in Maze Environment</figcaption>
-    </figure>
-  </div>
-  <div class="column">
-    <figure class="image">
-      <img src="./static/images/maicbf_trajectory_1024_agents_empty.gif" alt="empty_1024">
-      <figcaption>1024 Agents in Empty Space</figcaption>
-    </figure>
-  </div>
-</div>  -->
-
-<!-- New centered GIF with caption -->
-<!-- <div class="columns is-centered has-text-centered">
-  <div class="column is-half">
-    <figure class="image">
-      <img src="./static/images/ours_trajectory_16_agents_empty_itr_06_fps_10_trailing_random.gif" alt="16 agents trailing"> -->
-<!--       <figcaption>16 agents randomly navigating</figcaption> -->
-<!--     </figure>
-  </div>
-</div> -->
-
-<!-- Captions Section -->
-<!-- <div class="columns is-centered has-text-centered">
-  <div class="column">
-    <figcaption>256 Agents in Maze</figcaption>
-  </div>
-  <div class="column">
-    <figcaption>1024 Agents in Maze</figcaption>
-  </div>
-  <div class="column">
-    <figcaption>256 Agents in Empty Space/figcaption>
-  </div>
-  <div class="column">
-    <figcaption>1024 Agents in Empty Space</figcaption>
-  </div> -->
+<!-- Image Section -->
+<section class="hero">
+  <div class="container is-max-desktop">
+<!-- <div class="image-grid">
+  <div class="image-container"> -->
+      <img src="./static/images/overview.png" alt="Image 1">
+      <p class="image-title">Flow diagram of our multi-agent inverse reinforcement learning algorithm.</p>
+  <!-- </div> -->
+   <!-- <br> -->
+  <!-- <div class="image-container"> -->
+      <!-- <img src="./static/images/graphs2.png" alt="Image 2" width="650" style="display: block; margin: 0 auto;">
+      <p class="image-title">Comparing agents' (A1, A2) velocities generated by LiveNet and SMG-CBF, before and after crossing the doorway.</p> -->
+  <!-- </div> -->
+  <!-- Add more images as needed -->
 <!-- </div> -->
-<!--/ GIFs Section -->
+</div>
 
-<!-- <section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Proposed Approach</h2>
-        <figure class="image is-centered">
-          <img src="./static/images/approach.png" alt="Proposed Approach">
-        </figure>
-        <div class="content has-text-justified">
-          <p>
-            Our proposed approach jointly learns a safe decentralized control policy and an Integral Control Barrier Functions (ICBF) based certificate to ensure safety as well as input constraint satisfaction. The approach is divided into two main phases: Training and Execution.
-          </p>
-          
-          <p>
-            <strong>Training Phase:</strong> The first step involves the joint learning of the Neural Integral Control Barrier Function (NICBF) certificates and a decentralized safe control policy that enables the N agents to reach their respective goals. Since the control policies are parameterized by neural networks, they do not provide complete safety guarantees for the agents. Furthermore, as N increases, the likelihood of deadlock increases.
-          </p>
-          
-          <p style="margin-top: 20px;">
-            <strong>Execution Phase:</strong> To address these limitations, the second step involves developing theoretical frameworks to augment the NN policy from the first step, ensuring collision avoidance and minimizing deadlocks. For complete collision avoidance guarantees, we switch to a decentralized MPC-ICBF control policy whenever a potential collision with neighbors is detected using the NN policy. We draw an analogy between deadlocks and minimizing non-convex loss functions and propose a method to modify the control input to reduce deadlocks. 
-          </p>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-<!-- <section class="section">
-  <div class="container is-max-desktop"> -->
-    <!-- <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Environments</h2>
-        <figure class="image is-centered">
-          <img src="./static/images/env.png" alt="Environments">
-        </figure>
-        <div class="content has-text-justified">
-          <p> -->
-            <!-- The experiments in this research were conducted in two distinct environments: an empty environment and a maze environment.  -->
-<!--             These environments were selected to test the robustness and scalability of the proposed control framework under different levels of complexity. -->
-          <!-- </p> -->
-
-<!--           <p>
-            <strong>Empty Environment:</strong> In the empty environment, agents are placed in an open space without any obstacles. This setup allows for a straightforward assessment of the control policy's ability to navigate agents towards their targets without any interference. It serves as a baseline to evaluate the basic functionality of the proposed approach, ensuring that it can handle simple scenarios efficiently and avoid unnecessary collisions.
-          </p>
-
-          <p>
-            <strong>Maze Environment:</strong> The maze environment introduces a more complex and challenging scenario where agents must navigate through the environment with multiple walls and obstacles. This environment is designed to test the control framework's ability to handle more intricate navigation tasks, where the likelihood of collisions and deadlocks increases significantly. The maze environment is crucial for evaluating the scalability and safety of the approach, especially when dealing with a large number of agents in a confined space.
-          
-
-          
-            These two environments were chosen to demonstrate the effectiveness of the proposed approach in both simple and complex scenarios. The results from these environments provides the approach's effectiveness to maintain safety, avoid collisions, and minimize deadlocks across different levels of environmental complexity. -->
-          <!-- </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
+<br><br>
 
 
-<!-- <section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Collision avoidance</h2>
-        <figure class="image is-centered">
-          <img src="./static/images/collisions.png" alt="Results">
-        </figure>
-        <div class="content has-text-justified">
-          <p>
-Our proposed approach guarantees 100% collision avoidance, regardless of the number of agents in both empty as well as maze environments. This scalability feature is particularly significant, as it allows our approach to handle scenarios with more than 1000 agents effectively.
-          </p>
-
-
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-<!-- <section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Deadlocks</h2>
-        <figure class="image is-centered">
-          <img src="./static/images/deadlocks.png" alt="Results">
-        </figure>
-        <div class="content has-text-justified">
-          <p>
-As observed, there is a significant reduction in deadlocks among agents in both empty and maze environments by leveraging our proposed deadlock minimization mechanism. 
-Furthermore, the average number of deadlocks increases with the number of agents. However, our proposed method MA-ICBF successfully minimizes deadlocks while ensuring that the trajectories are safe. In addition, the safety and scalability of MA-ICBF are not compromised during deadlock minimization.  
-          </p>
-
-
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-<!--         <section class="section"> -->
-  <!-- <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Input constraint satisfaction</h2>
-        <figure class="image is-centered">
-          <img src="./static/images/input_constraints.png" alt="Results">
-        </figure>
-        <div class="content has-text-justified">
-          <p>
-In real-world scenarios, robots have limited actuation capabilities and cannot exceed certain control limits. 
- Therefore, it becomes critical for the designed safe decentralized controller to satisfy input constraints to ensure the feasible deployment of robots. As observed from the Fig., our proposed approach (MA-ICBF) successfully keeps all agents within these constraints, with no violations. In contrast, prior methods show a significant increase in input constraint violation (especially for 1024 agents).
-          </p>
-
-
-        </div>
-      </div>
-    </div>
-  </div> -->
-<!-- </section> -->
-
-            <!-- <section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Computational time</h2>
-        <figure class="image is-centered">
-          <img src="./static/images/comp_time.png" alt="Results">
-        </figure>
-        <div class="content has-text-justified">
-          <p>
-MA-ICBF can provide safety guarantees as well as input constraint satisfaction even for a large number of agents with compromising on the overall computational load (runtime in ms) as the number of agents increases, thereby showing good scalability. 
-          </p>
-
-
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-<!-- TODO: Fill out this segment (BibTeX) -->
-<!-- <section class="section" id="BibTeX">
+<section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{zinage2024decentralized,
-  title={Decentralized Safe and Scalable Multi-Agent Control under Limited Actuation},
-  author={Zinage, Vrushabh and Jha, Abhishek and Chandra, Rohan and Bakolas, Efstathios},
-  journal={arXiv preprint arXiv:2409.09573},
-  year={2024}
-}</code></pre>
+    <pre><code>@article{chandra2024towards,
+      title={Towards Imitation Learning in Real World Unstructured Social Mini-Games in Pedestrian Crowds},
+      author={Chandra, Rohan and Karnan, Haresh and Mehr, Negar and Stone, Peter and Biswas, Joydeep},
+      journal={arXiv preprint arXiv:2405.16439},
+      year={2024}
+    }
+</code></pre>
   </div>
-</section> -->
+</section>
 
 
 <footer class="footer">
